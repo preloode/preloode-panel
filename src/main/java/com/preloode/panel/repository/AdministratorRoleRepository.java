@@ -17,14 +17,14 @@ public class AdministratorRoleRepository {
     /* _id
     created {
         administrator {
-            id
+            _id
             username
         }
         timestamp
     }
     modified {
         administrator {
-            id
+            _id
             name
         }
         timestamp

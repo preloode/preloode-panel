@@ -16,7 +16,7 @@ public class AdministratorLogRepository {
 
     /* _id
     administrator {
-        id
+        _id
         username
     }
     authentication
@@ -37,7 +37,7 @@ public class AdministratorLogRepository {
     }
     created {
         administrator {
-            id
+            _id
             username
         }
         timestamp
@@ -46,13 +46,13 @@ public class AdministratorLogRepository {
     log
     modified {
         administrator {
-            id
+            _id
             name
         }
         timestamp
     }
     target {
-        id
+        _id
         name
     } */
     @Autowired

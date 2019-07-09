@@ -26,7 +26,7 @@ public class AdministratorRepository {
     country
     created {
         administrator {
-            id
+            _id
             username
         }
         timestamp
@@ -36,7 +36,7 @@ public class AdministratorRepository {
     language
     modified {
         administrator {
-            id
+            _id
             username
         }
         timestamp
@@ -76,7 +76,7 @@ public class AdministratorRepository {
     }
     province
     role {
-        id
+        _id
         name
     }
     status
