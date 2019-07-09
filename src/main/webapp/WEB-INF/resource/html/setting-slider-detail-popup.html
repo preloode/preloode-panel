@@ -1,0 +1,45 @@
+<div class="accordion" ng-init="initializeLayout()">
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="1">Detail<span><i class="plus-white square-10"></i></span>
+    </p>
+    <div class="accordion-content" data-index="1">
+        <p class="title">Name</p>
+        <div class="data">{{name.value}}</div>
+        <div class="clearfix"></div>
+        <p class="title">URL</p>
+        <div class="data">{{url.value}}</div>
+        <div class="clearfix"></div>
+        <p class="title">Page</p>
+        <div class="data">
+            <div class="checkbox" ng-repeat="pageOptionItem in page.option">
+                <md-checkbox ng-checked="page.value.id.indexOf(pageOptionItem.id) > -1">{{pageOptionItem.name}}
+                </md-checkbox>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <p class="title">Sequence</p>
+        <div class="data">{{sequence.value}}</div>
+        <div class="clearfix"></div>
+        <p class="title">Status</p>
+        <div class="data">{{status.value}}</div>
+        <div class="clearfix"></div>
+        <p class="title">Created Date</p>
+        <p class="data">{{createdDate.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Modified Date</p>
+        <p class="data">{{modifiedDate.value}}</p>
+        <div class="clearfix"></div>
+    </div>
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="2">File<span><i
+            class="plus-white square-10"></i></span></p>
+    <div class="accordion-content" data-index="2">
+        <p class="title">Source</p>
+        <p class="data">{{fileSource.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title file">File</p>
+        <div class="file-list" ng-if="file.upload.result">
+            <img class="responsive" ng-src="{{file.value}}">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="popup-separator"></div>
+</div>

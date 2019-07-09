@@ -1,0 +1,128 @@
+<div class="accordion" ng-init="initializeLayout()">
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="1">Detail<span><i class="plus-white square-10"></i></span>
+    </p>
+    <div class="accordion-content" data-index="1">
+        <p class="title">ID</p>
+        <p class="data">{{id.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Username</p>
+        <p class="data">{{username.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Password</p>
+        <p class="data">{{password.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Group</p>
+        <p class="data">{{group.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Type</p>
+        <div class="checkbox-list">
+            <div class="checkbox" ng-repeat="typeOption in type.option">
+                <md-checkbox ng-checked="typeCheckbox(typeOption, type.value)" ng-click="$event.preventDefault()">
+                    {{typeOption.name}}
+                </md-checkbox>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <p class="title">Game</p>
+        <div class="checkbox-list">
+            <div class="checkbox" ng-repeat="gameOption in game.option">
+                <md-checkbox ng-checked="game.value.id.indexOf(gameOption.id) > -1" ng-click="$event.preventDefault()">
+                    {{gameOption.name}}
+                </md-checkbox>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <p class="title">First Name</p>
+        <p class="data">{{firstName.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Middle Name</p>
+        <p class="data">{{middleName.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Last Name</p>
+        <p class="data">{{lastName.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Gender</p>
+        <p class="data">{{gender.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title file">File</p>
+        <div class="file-list" ng-if="file.upload.result">
+            <img class="responsive" ng-src="{{file.value}}">
+        </div>
+        <div class="clearfix"></div>
+        <p class="title">Language</p>
+        <p class="data">{{language.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Street Address</p>
+        <p class="data">{{streetAddress.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">City</p>
+        <p class="data">{{city.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Province</p>
+        <p class="data">{{province.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">ZIP code</p>
+        <p class="data">{{zipCode.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Country</p>
+        <p class="data">{{country.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Status</p>
+        <p class="data">{{status.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Created Date</p>
+        <p class="data">{{createdDate.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Modified Date</p>
+        <p class="data">{{modifiedDate.value}}</p>
+        <div class="clearfix"></div>
+    </div>
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="2">Contact<span><i
+            class="plus-white square-10"></i></span></p>
+    <div class="accordion-content" data-index="2">
+        <p class="title">Phone Number</p>
+        <p class="data">{{phoneNumber.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Email Address</p>
+        <p class="data">{{emailAddress.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Whatsapp Number</p>
+        <p class="data">{{whatsappNumber.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Line ID</p>
+        <p class="data">{{lineId.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Wechat ID</p>
+        <p class="data">{{wechatId.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">BBM PIN</p>
+        <p class="data">{{bbmPin.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title file">Identity</p>
+        <div class="file-list" ng-if="identity.upload.result">
+            <img class="responsive" ng-src="{{identity.value}}">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="3">Bank Account<span><i
+            class="plus-white square-10"></i></span></p>
+    <div class="accordion-content" data-index="3">
+        <div class="bank-account" ng-if="!listPaymentBankAccount.view"><p>You haven't added bank account yet</p></div>
+        <table class="bank-account" ng-if="listPaymentBankAccount.view">
+            <tr>
+                <th><p>#</p></th>
+                <th><p>Bank Name</p></th>
+                <th><p>Bank Account Number</p></th>
+                <th><p>Bank Account Name</p></th>
+                <th><p>Action</p></th>
+            </tr>
+            <tr ng-repeat="listPaymentBankAccountValue in listPaymentBankAccount.value.account.id">
+                <td><p>{{$index + 1}}</p></td>
+                <td><p>{{listPaymentBankAccount.value.name[$index]}}</p></td>
+                <td><p>{{listPaymentBankAccount.value.account.number[$index]}}</p></td>
+                <td><p>{{listPaymentBankAccount.value.account.name[$index]}}</p></td>
+            </tr>
+        </table>
+    </div>
+    <div class="popup-separator"></div>
+</div>

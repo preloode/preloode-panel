@@ -1,0 +1,46 @@
+<div class="accordion" ng-init="initializeLayout()">
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="1">Detail<span><i class="plus-white square-10"></i></span>
+    </p>
+    <div class="accordion-content" data-index="1">
+        <p class="title">ID</p>
+        <p class="data">{{id.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">From</p>
+        <p class="data" ng-if="type.value == 'Commission' || type.value == 'Deposit' || type.value == 'Promotion'">
+            {{gameType.value}} - {{game.value}}</p>
+        <p class="data" ng-if="type.value == 'Top Up'">{{fromBank.value}} - {{fromBankAccount.value}}</p>
+        <p class="data" ng-if="type.value == 'Withdrawal'">{{fromPlayer.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">To</p>
+        <p class="data" ng-if="type.value == 'Deposit' || type.value == 'Promotion'">{{toPlayer.value}}</p>
+        <p class="data" ng-if="type.value == 'Commission' || type.value == 'Top Up'">Provider</p>
+        <p class="data" ng-if="type.value == 'Withdrawal'">{{gameType.value}} - {{game.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Game Type</p>
+        <p class="data">{{gameType.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Game</p>
+        <p class="data">{{game.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Amount</p>
+        <p class="data">{{amount.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title file">File</p>
+        <div class="file-list" ng-if="file.upload.result">
+            <img class="responsive" ng-src="{{file.value}}">
+        </div>
+        <div class="clearfix"></div>
+        <p class="title">Description</p>
+        <p class="data">{{description.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Status</p>
+        <p class="data">{{status.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Created Date</p>
+        <p class="data">{{createdDate.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Modified Date</p>
+        <p class="data">{{modifiedDate.value}}</p>
+        <div class="clearfix"></div>
+    </div>
+</div>

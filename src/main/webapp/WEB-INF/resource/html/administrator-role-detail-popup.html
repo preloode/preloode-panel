@@ -1,0 +1,40 @@
+<div class="accordion" ng-init="initializeLayout()">
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="1">Detail<span><i class="plus-white square-10"></i></span>
+    </p>
+    <div class="accordion-content" data-index="1">
+        <p class="title">ID</p>
+        <p class="data">{{id.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Name</p>
+        <p class="data">{{name.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Sequence</p>
+        <p class="data">{{sequence.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Status</p>
+        <p class="data">{{status.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Created Date</p>
+        <p class="data">{{createdDate.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Modified Date</p>
+        <p class="data">{{modifiedDate.value}}</p>
+        <div class="clearfix"></div>
+    </div>
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="2">Privilege<span><i
+            class="plus-white square-10"></i></span></p>
+    <div class="accordion-content" data-index="2">
+        <div class="privilege" ng-repeat="privilegeItem in privilege">
+            <p class="title"><span class="required"></span>Privilege {{privilegeItem.name}}</p>
+            <div class="checkbox-list">
+                <div class="checkbox" ng-repeat="privilegeItemOption in privilegeItem.option">
+                    <md-checkbox ng-checked="privilegeItem.value.slice($index, ($index + 1)) == '7'"
+                                 ng-click="$event.preventDefault()">{{privilegeItemOption.name}}
+                    </md-checkbox>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="popup-separator"></div>
+</div>

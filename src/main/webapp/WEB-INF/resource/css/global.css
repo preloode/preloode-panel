@@ -1,0 +1,2122 @@
+/*==================== Basic ====================*/
+html,
+body {
+    background: #082648 url("../image/background.png") left top repeat-x !important;
+    color: #f7f7f7;
+    font-family: roboto-light, Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    position: static !important;
+}
+
+h1,
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+a {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/*========== Form ==========*/
+input,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #798699;
+    color: #f7f7f7;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 10px;
+    resize: none;
+    transition-duration: 1s;
+}
+
+select {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #798699;
+    color: #f7f7f7;
+    height: 32px;
+    padding: 5px 0 5px 10px;
+}
+
+form .select2-container a.select2-choice {
+    border-bottom: 2px solid #798699;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-bottom: 2px solid #367fa9;
+}
+
+select option {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+select option:first-child {
+    display: none;
+}
+
+button {
+    color: #f7f7f7;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+/*========== Page Not Found ==========*/
+#wrapper .wrapper img.page-not-found {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+}
+
+#wrapper .wrapper p.back {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+/*========== Popup ==========*/
+#popup div.wrapper {
+    width: 600px;
+}
+
+div.wrapper .popup p.title {
+    float: left;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 0 10px 0;
+    padding: 0 20px 0 0;
+    text-align: right;
+    width: 170px !important;
+}
+
+div.wrapper .popup p.data,
+div.wrapper .popup div.file-list,
+div.wrapper .popup div.thumbnail-list,
+div.wrapper .popup div.checkbox-list,
+div.wrapper .popup div.data {
+    float: left;
+    line-height: 32px;
+    margin: 0 0 10px 0;
+    width: 357px !important;
+}
+
+div.wrapper .popup div.file-list,
+div.wrapper .popup div.thumbnail-list {
+    height: 50px;
+    margin: 0 0 10px 0 !important;
+}
+
+div.wrapper .popup div.checkbox-list {
+    line-height: 20px;
+    margin: 0;
+}
+
+div.popup .checkbox-list div.checkbox {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+div.popup .data p:first-child {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+div.popup .data p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+div.popup .accordion div.popup-separator {
+    height: 40px;
+}
+
+/*==================== Content ====================*/
+#content {
+    margin: 0 auto;
+    min-height: 671px;
+    width: 1300px;
+}
+
+#content .wrapper div.navigation {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 10px 20px;
+    grid-template-columns: 1fr 120px;
+    margin: 0 auto 20px auto;
+    padding: 5px 20px;
+}
+
+div.navigation .breadcrumb p {
+    cursor: pointer;
+    float: left;
+    line-height: 30px;
+    margin: 0 0 0 5px;
+}
+
+div.navigation .breadcrumb p:first-child {
+    margin: 0;
+}
+
+div.navigation .action a.add {
+    background: #59ad2f;
+    border: 1px solid #59ad2f;
+    border-radius: 5px;
+    display: block;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    width: 78px;
+}
+
+div.navigation .action a.add:hover {
+    background: #4f9b2b;
+    text-decoration: none;
+}
+
+#content .wrapper div.filter {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    padding: 10px 20px;
+}
+
+div.filter form input,
+div.filter form md-input-container {
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+div.filter form input.id {
+    width: 60px;
+}
+
+div.filter form button.filter,
+div.filter form button.remove-filter {
+    background: #ffa91f;
+    border: 1px solid #ffa91f;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    line-height: 30px;
+    margin: 0 10px 0 0;
+    padding: 0 20px;
+    width: 100px;
+}
+
+div.filter form button.remove-filter {
+    background: #41a6ff;
+    border: 1px solid #41a6ff;
+    margin: 0;
+    width: 150px;
+}
+
+div.filter form button.filter:hover {
+    background: #ff9806;
+}
+
+div.filter form button.remove-filter:hover {
+    background: #3f97fe;
+}
+
+#content .wrapper div.content {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    padding: 10px 20px;
+}
+
+div.wrapper .content form.page-entry {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    grid-template-columns: 80px 50px 1fr;
+    margin: 0 auto 10px auto;
+}
+
+div.content .page-entry p {
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+}
+
+div.content .page-entry input {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    width: 30px;
+}
+
+div.content .page-entry button {
+    background: #59ad2f;
+    border: 1px solid #59ad2f;
+    border-radius: 5px;
+    display: block;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 0 20px;
+    text-align: center;
+    width: 130px;
+}
+
+div.content .page-entry button:hover {
+    background: #4f9b2b;
+}
+
+div.wrapper .content table.data-list {
+    border-collapse: collapse;
+    margin: 0 auto 10px auto;
+    width: 1260px;
+}
+
+div.content .data-list tr {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    user-select: none;
+}
+
+div.content .data-list tr:nth-child(2n+2) {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+div.content .data-list tr:last-child {
+    border: none;
+}
+
+div.content .data-list th {
+    padding: 0;
+}
+
+div.content .data-list th.index {
+    width: 80px;
+}
+
+div.content .data-list th.action {
+    width: 110px;
+}
+
+table.data-list th p {
+    line-height: 30px;
+    margin: 5px 20px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.content .data-list td {
+    padding: 0;
+}
+
+table.data-list td p {
+    line-height: 20px;
+    margin: 5px 20px;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+table.data-list .load-data p {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+table.data-list td p img {
+    display: block;
+    max-height: 50px;
+}
+
+table.data-list .action div {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    grid-template-columns: 28px 30px;
+    margin: 5px 20px;
+}
+
+td.action div a {
+    background: #ffa91f;
+    border: 1px solid #ffa91f;
+    border-radius: 5px;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    text-decoration: none;
+    text-align: center;
+    width: 28px;
+}
+
+td.action div a:hover {
+    background: #ff9806;
+}
+
+td.action div form {
+    display: block;
+    width: 30px;
+}
+
+td.action div form button.delete {
+    background: #af2f2f;
+    border: 1px solid #af2f2f;
+    border-radius: 5px;
+    display: block;
+    height: 24px;
+    line-height: 22px;
+    padding: 0;
+    width: 100%;
+}
+
+td.action div form button.delete:hover {
+    background: #a62d2d;
+}
+
+div.wrapper form div.accordion {
+    margin: 0 0 20px 0;
+}
+
+div.wrapper form .accordion div.data-entry {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    grid-template-columns: 180px 760px 300px;
+}
+
+div.accordion .accordion-content div.title {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 0.2s;
+}
+
+div.accordion-content .title p {
+    font-weight: 600;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 10px 0 0;
+    text-align: right;
+}
+
+div.title p span.required {
+    color: #af2f2f;
+    font-weight: 600;
+}
+
+div.accordion-content .file p {
+    height: 50px;
+    line-height: 50px;
+}
+
+div.accordion .accordion-content div.data {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 0.2s;
+}
+
+div.accordion .accordion-content div.select {
+    z-index: 1;
+}
+
+div.accordion-content .data input,
+div.accordion-content .data textarea {
+    display: relative;
+    width: 740px;
+    z-index: 10;
+}
+
+div.accordion-content .data input[type="file"] {
+    display: none;
+}
+
+div.accordion-content .data div.ui-select-container {
+    width: 760px;
+}
+
+div.accordion-content .data div.file-list,
+div.accordion-content .data div.thumbnail-list {
+    float: left;
+    height: 50px;
+    margin: 0 10px 0 0;
+    max-width: 590px;
+}
+
+div.accordion-content .data div.upload-file {
+    background: #41a6ff;
+    border: 1px solid #41a6ff;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    font-weight: 600;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+    padding: 0 8px;
+    text-align: center;
+    width: 132px;
+}
+
+div.accordion-content .data div.upload-file:hover {
+    background: #3f97fe;
+}
+
+div.accordion-content .data .country-code {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 70px;
+}
+
+div.data .country-code div.ui-select-container {
+    width: 70px;
+}
+
+div.accordion-content .data div.number {
+    float: left;
+    width: 680px;
+}
+
+div.data .number input {
+    width: 660px;
+}
+
+div.accordion .accordion-content div.data-entry {
+    margin: 0 0 10px 0;
+}
+
+div.accordion .accordion-content div.data-entry:last-child {
+    margin: 0;
+}
+
+div.accordion-content .data div.select-all {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 100px;
+}
+
+div.accordion-content .data div.checkbox {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+div.accordion-content .tinymce button {
+    border-radius: 0 !important;
+    display: inline !important;
+    margin: 0 !important;
+    width: auto !important;
+}
+
+div.accordion .accordion-content div.response {
+    font-weight: 600;
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 0.2s;
+}
+
+div.accordion .accordion-content div.title.ng-hide,
+div.accordion .accordion-content div.data.ng-hide,
+div.accordion .accordion-content div.response.ng-hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+div.accordion-content .response p {
+    border-radius: 5px;
+    float: right;
+    line-height: 32px;
+    padding: 0 10px;
+    margin: 0;
+    max-width: 280px;
+}
+
+div.wrapper .button button {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+div.wrapper .button button.add {
+    background: #59ad2f;
+    border: 1px solid #59ad2f;
+}
+
+div.wrapper .button button.add:hover {
+    background: #4f9b2b;
+}
+
+div.wrapper .button button.edit {
+    background: #ffa91f;
+    border: 1px solid #ffa91f;
+}
+
+div.wrapper .button button.edit:hover {
+    background: #ff9806;
+}
+
+/*========== Footer ==========*/
+#footer {
+    height: 50px;
+}
+
+#footer p {
+    line-height: 20px;
+    margin: 0 20px;
+    padding: 15px;
+    text-align: right;
+}
+
+/*========== Header ==========*/
+#header {
+    background: #133959;
+    border-radius: 5px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    grid-template-columns: 300px 1fr 30px 30px;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
+}
+
+div.logo a h1 {
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#header div.account {
+    height: 30px;
+    text-align: right;
+}
+
+#header .account p {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: #f7f7f7;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    max-width: 810px;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#header .account img {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 15px 0 0;
+    opacity: 0.8;
+    text-align: center;
+}
+
+#header div.notification,
+#header div.logout {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+}
+
+#header div.logout {
+    border-radius: 50%;
+}
+
+#header div.logout:hover,
+#header div.notification:hover,
+#header .account p:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#header .account img:hover {
+    opacity: 1;
+}
+
+/*========== Menu ==========*/
+#menu-icon {
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    padding: 10px 15px;
+    position: fixed;
+    text-align: right;
+    transition: 0.2s linear all;
+    transform: translateX(-250px);
+    width: 270px;
+    z-index: 10;
+}
+
+#menu {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    transition: 0.2s linear all;
+    transform: translateX(-100%);
+    width: 300px;
+    z-index: 9;
+}
+
+#menu ul.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu .main-menu li {
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#menu .main-menu li.child-menu {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.2s linear all;
+}
+
+li.menu a p {
+    color: #f7f7f7;
+    float: left;
+    height: 40px;
+    margin: 0 0 0 15px;
+    width: 260px;
+}
+
+li.child-menu a p {
+    margin: 0 0 0 45px;
+    width: 215px;
+}
+
+ul.main-menu .menu p.menu-toggle {
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin: 12.5px 10px 12.5px 0;
+    width: 15px;
+}
+
+li.menu .menu-toggle i {
+    transition: 0.2s linear all;
+}
+
+ul.main-menu .menu span {
+    background: rgba(247, 247, 247, 0.4);
+    background: linear-gradient(to right, rgba(247, 247, 247, 0.4), rgba(247, 247, 247, 0));
+    background: -moz-linear-gradient(left, rgba(247, 247, 247, 0.4), rgba(247, 247, 247, 0));
+    background: -o-linear-gradient(left, rgba(247, 247, 247, 0.4), rgba(247, 247, 247, 0));
+    background: -webkit-linear-gradient(left, rgba(247, 247, 247, 0.4), rgba(247, 247, 247, 0));
+    display: block;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7f7f7, endColorstr=#008080);
+    height: 40px;
+    margin: -40px 0 0 0;
+    transition-duration: 0.2s;
+    width: 10%;
+}
+
+ul.main-menu .menu span {
+    background: rgba(247, 247, 247, 0.2);
+    background: linear-gradient(to right, rgba(247, 247, 247, 0.1), rgba(247, 247, 247, 0));
+    background: -moz-linear-gradient(left, rgba(247, 247, 247, 0.1), rgba(247, 247, 247, 0));
+    background: -o-linear-gradient(left, rgba(247, 247, 247, 0.1), rgba(247, 247, 247, 0));
+    background: -webkit-linear-gradient(left, rgba(247, 247, 247, 0.1), rgba(247, 247, 247, 0));
+}
+
+ul.main-menu .menu:hover span {
+    width: 100%;
+}
+
+#menu li.separator {
+    height: 3px;
+}
+
+/*========== Pagination ==========*/
+div.wrapper .content div.pagination {
+
+}
+
+div.content .pagination ul {
+    list-style: none;
+    padding: 0;
+}
+
+div.pagination ul a {
+    display: block;
+    float: left;
+}
+
+div.pagination ul li {
+    background: rgba(0, 0, 0, 0.2);
+    color: #337ab7;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    min-width: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+div.pagination ul li i {
+    margin-top: 3.5px;
+}
+
+div.pagination ul li form input {
+    padding: 0;
+    text-align: center;
+    width: 25px;
+}
+
+div.pagination ul li form button {
+    display: none;
+}
+
+@media only screen and (max-width: 359px) {
+
+    /*==================== Basic ====================*/
+    .mobile {
+        display: block;
+    }
+
+    /*========== Popup ==========*/
+    #popup div.wrapper {
+        padding: 20px 0 20px 10px;
+        width: 310px;
+    }
+
+    div.wrapper .popup p.title {
+        float: none;
+        margin: 0 20px !important;
+        padding: 0;
+        text-align: left;
+    }
+
+    div.wrapper .popup p.data,
+    div.wrapper .popup div.file-list,
+    div.wrapper .popup div.thumbnail-list,
+    div.wrapper .popup div.checkbox-list,
+    div.wrapper .popup div.data {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        float: none;
+        margin: 0 20px;
+        width: 257px;
+    }
+
+    /*========== Response ==========*/
+    #response {
+        left: 5%;
+        width: 90%;
+    }
+
+    /*==================== Content ====================*/
+    #content {
+        width: 320px;
+    }
+
+    #content .wrapper div.navigation {
+        padding: 5px 10px;
+    }
+
+    div.wrapper .navigation div.breadcrumb {
+        grid-column: 1/3;
+    }
+
+    div.wrapper .navigation div.action {
+        grid-column: 1/3;
+    }
+
+    div.navigation .action a.add {
+        margin: 0 auto 5px auto;
+    }
+
+    #content .wrapper div.content {
+        padding: 10px 0;
+    }
+
+    div.content .page-entry p {
+        margin: 0 0 0 20px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 320px;
+    }
+
+    div.content .data-list th.index {
+        width: 60px;
+    }
+
+    div.content .data-list th:nth-child(2) {
+        width: 170px;
+    }
+
+    div.content .data-list th.action {
+        width: 90px;
+    }
+
+    table.data-list th p,
+    table.data-list td p,
+    table.data-list .action div {
+        margin: 5px 10px;
+    }
+
+    table.data-list td p {
+        max-width: 150px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.accordion-content .title p {
+        margin: 0;
+        text-align: left;
+    }
+
+    div.accordion-content .file p {
+        height: 32px;
+        line-height: 32px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 280px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 300px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 220px;
+    }
+
+    div.data .number input {
+        width: 200px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 140px;
+    }
+
+    div.accordion-content .response p {
+        float: left;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header {
+        grid-template-columns: 1fr 30px 30px;
+        padding: 10px;
+    }
+
+    #header div.logo {
+        grid-column: 1/4;
+        height: 20px;
+        text-align: center;
+    }
+
+    div.logo a h1 {
+        height: 20px;
+        line-height: 20px;
+    }
+
+    #header div.account {
+        text-align: left;
+    }
+
+    #header .account p {
+        max-width: 162px;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+
+    /*==================== Basic ====================*/
+    .mobile {
+        display: block;
+    }
+
+    /*========== Popup ==========*/
+    #popup div.wrapper {
+        padding: 20px 0 20px 10px;
+        width: 350px;
+    }
+
+    div.wrapper .popup p.title {
+        float: none;
+        margin: 0 20px !important;
+        padding: 0;
+        text-align: left;
+    }
+
+    div.wrapper .popup p.data,
+    div.wrapper .popup div.file-list,
+    div.wrapper .popup div.thumbnail-list,
+    div.wrapper .popup div.checkbox-list,
+    div.wrapper .popup div.data {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        float: none;
+        margin: 0 20px;
+        width: 297px;
+    }
+
+    /*========== Response ==========*/
+    #response {
+        left: 5%;
+        width: 90%;
+    }
+
+    /*==================== Content ====================*/
+    #content {
+        width: 360px;
+    }
+
+    #content .wrapper div.navigation {
+        padding: 5px 10px;
+    }
+
+    div.wrapper .navigation div.breadcrumb {
+        grid-column: 1/3;
+    }
+
+    div.wrapper .navigation div.action {
+        grid-column: 1/3;
+    }
+
+    div.navigation .action a.add {
+        margin: 0 auto 5px auto;
+    }
+
+    div.content .page-entry p {
+        margin: 0 0 0 40px;
+    }
+
+    #content .wrapper div.content {
+        padding: 10px 0;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 360px;
+    }
+
+    div.content .data-list th.index {
+        width: 60px;
+    }
+
+    div.content .data-list th:nth-child(2) {
+        width: 210px;
+    }
+
+    div.content .data-list th.action {
+        width: 90px;
+    }
+
+    table.data-list th p,
+    table.data-list td p,
+    table.data-list .action div {
+        margin: 5px 10px;
+    }
+
+    table.data-list td p {
+        max-width: 190px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.accordion-content .title p {
+        margin: 0;
+        text-align: left;
+    }
+
+    div.accordion-content .file p {
+        height: 32px;
+        line-height: 32px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 320px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 340px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 260px;
+    }
+
+    div.data .number input {
+        width: 240px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 180px;
+    }
+
+    div.accordion-content .response p {
+        float: left;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header {
+        grid-template-columns: 1fr 30px 30px;
+        padding: 10px;
+    }
+
+    #header div.logo {
+        grid-column: 1/4;
+        height: 20px;
+        text-align: center;
+    }
+
+    div.logo a h1 {
+        height: 20px;
+        line-height: 20px;
+    }
+
+    #header div.account {
+        text-align: left;
+    }
+
+    #header .account p {
+        max-width: 202px;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+
+    /*==================== Basic ====================*/
+    .mobile {
+        display: block;
+    }
+
+    /*========== Popup ==========*/
+    #popup div.wrapper {
+        width: 413px;
+    }
+
+    div.wrapper .popup p.title {
+        float: none;
+        margin: 0 20px !important;
+        padding: 0;
+        text-align: left;
+    }
+
+    div.wrapper .popup p.data,
+    div.wrapper .popup div.file-list,
+    div.wrapper .popup div.thumbnail-list,
+    div.wrapper .popup div.checkbox-list,
+    div.wrapper .popup div.data {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        float: none;
+        margin: 0 20px;
+        width: 360px;
+    }
+
+    /*========== Response ==========*/
+    #response {
+        left: 10%;
+        width: 80%;
+    }
+
+    /*==================== Content ====================*/
+    #content {
+        width: 480px;
+    }
+
+    #content .wrapper div.navigation {
+        padding: 5px 10px;
+    }
+
+    #content .wrapper div.content {
+        padding: 10px 0;
+    }
+
+    div.content .page-entry p {
+        margin: 0 0 0 20px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 480px;
+    }
+
+    div.content .data-list th.index {
+        width: 60px;
+    }
+
+    div.content .data-list th.action {
+        width: 90px;
+    }
+
+    table.data-list th p,
+    table.data-list td p,
+    table.data-list .action div {
+        margin: 5px 10px;
+    }
+
+    table.data-list td p {
+        max-width: 250px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.accordion-content .title p {
+        margin: 0;
+        text-align: left;
+    }
+
+    div.accordion-content .file p {
+        height: 32px;
+        line-height: 32px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 440px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 460px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 380px;
+    }
+
+    div.data .number input {
+        width: 360px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 300px;
+    }
+
+    div.accordion-content .response p {
+        float: left;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header {
+        grid-template-columns: 180px 1fr 30px 30px;
+        padding: 10px;
+    }
+
+    #header div.logo {
+        height: 20px;
+        padding: 5px 0;
+    }
+
+    div.logo a h1 {
+        height: 20px;
+        line-height: 20px;
+    }
+
+    #header .account p {
+        max-width: 127px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 639px) {
+
+    /*==================== Basic ====================*/
+    .mobile {
+        display: block;
+    }
+
+    /*========== Popup ==========*/
+    #popup div.wrapper {
+        width: 533px;
+    }
+
+    div.wrapper .popup p.title {
+        float: none;
+        margin: 0 20px !important;
+        padding: 0;
+        text-align: left;
+    }
+
+    div.wrapper .popup p.data,
+    div.wrapper .popup div.file-list,
+    div.wrapper .popup div.thumbnail-list,
+    div.wrapper .popup div.checkbox-list,
+    div.wrapper .popup div.data {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        float: none;
+        margin: 0 20px;
+        width: 480px;
+    }
+
+    /*========== Response ==========*/
+    #response {
+        left: 20%;
+        width: 60%;
+    }
+
+    /*==================== Content ====================*/
+    #content {
+        width: 600px;
+    }
+
+    #content .wrapper div.navigation {
+        padding: 5px 10px;
+    }
+
+    #content .wrapper div.content {
+        padding: 10px 0;
+    }
+
+    div.content .page-entry p {
+        margin: 0 0 0 20px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 600px;
+    }
+
+    div.content .data-list th.index {
+        width: 60px;
+    }
+
+    div.content .data-list th.action {
+        width: 90px;
+    }
+
+    table.data-list th p,
+    table.data-list td p,
+    table.data-list .action div {
+        margin: 5px 10px;
+    }
+
+    table.data-list td p {
+        max-width: 250px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.accordion-content .title p {
+        margin: 0;
+        text-align: left;
+    }
+
+    div.accordion-content .file p {
+        height: 32px;
+        line-height: 32px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 560px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 580px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 500px;
+    }
+
+    div.data .number input {
+        width: 480px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 420px;
+    }
+
+    div.accordion-content .response p {
+        float: left;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header {
+        grid-template-columns: 270px 1fr 30px 30px;
+        padding: 10px;
+    }
+
+    #header .account p {
+        max-width: 157px;
+    }
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+    /*==================== Basic ====================*/
+    .mobile {
+        display: block;
+    }
+
+    /*========== Popup ==========*/
+    #popup div.wrapper {
+        width: 573px;
+    }
+
+    div.wrapper .popup p.title {
+        float: none;
+        margin: 0 20px !important;
+        padding: 0;
+        text-align: left;
+    }
+
+    div.wrapper .popup p.data,
+    div.wrapper .popup div.file-list,
+    div.wrapper .popup div.thumbnail-list,
+    div.wrapper .popup div.checkbox-list,
+    div.wrapper .popup div.data {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        float: none;
+        margin: 0 20px;
+        width: 520px;
+    }
+
+    /*========== Response ==========*/
+    #response {
+        left: 20%;
+        width: 60%;
+    }
+
+    /*==================== Content ====================*/
+    #content {
+        width: 640px;
+    }
+
+    #content .wrapper div.navigation {
+        padding: 5px 10px;
+    }
+
+    #content .wrapper div.content {
+        padding: 10px 0;
+    }
+
+    div.content .page-entry p {
+        margin: 0 0 0 20px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 640px;
+    }
+
+    div.content .data-list th.index {
+        width: 60px;
+    }
+
+    div.content .data-list th.action {
+        width: 90px;
+    }
+
+    table.data-list th p,
+    table.data-list td p,
+    table.data-list .action div {
+        margin: 5px 10px;
+    }
+
+    table.data-list td p {
+        max-width: 250px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.accordion-content .title p {
+        margin: 0;
+        text-align: left;
+    }
+
+    div.accordion-content .file p {
+        height: 32px;
+        line-height: 32px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 600px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 620px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 540px;
+    }
+
+    div.data .number input {
+        width: 520px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 460px;
+    }
+
+    div.accordion-content .response p {
+        float: left;
+    }
+
+    /*========== Footer ==========*/
+    #footer p {
+        text-align: center;
+    }
+
+    /*========== Header ==========*/
+    #header {
+        grid-template-columns: 270px 1fr 30px 30px;
+        padding: 10px;
+    }
+
+    #header .account p {
+        max-width: 197px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+
+    /*==================== Basic ====================*/
+    /*========== Response ==========*/
+    #response {
+        left: 25%;
+        width: 50%;
+    }
+
+    /*==================== Content ====================*/
+    #content {
+        width: 768px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 728px;
+    }
+
+    table.data-list td p {
+        max-width: 250px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 180px 538px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 518px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 538px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 458px;
+    }
+
+    div.data .number input {
+        width: 438px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 378px;
+    }
+
+    div.accordion .accordion-content div.response {
+        grid-column: 1/3;
+    }
+
+    /*========== Header ==========*/
+    #header .account p {
+        max-width: 197px;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+
+    /*==================== Basic ====================*/
+    /*========== Response ==========*/
+    #response {
+        left: 30%;
+        width: 40%;
+    }
+
+    /*==================== Content ====================*/
+    #content {
+        width: 800px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 760px;
+    }
+
+    table.data-list td p {
+        max-width: 250px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 180px 570px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 550px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 570px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 490px;
+    }
+
+    div.data .number input {
+        width: 470px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 410px;
+    }
+
+    div.accordion .accordion-content div.response {
+        grid-column: 1/3;
+    }
+
+    /*========== Header ==========*/
+    #header .account p {
+        max-width: 292px;
+    }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 979px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #content {
+        width: 900px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 860px;
+    }
+
+    table.data-list td p {
+        max-width: 300px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 180px 670px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 650px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 670px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 590px;
+    }
+
+    div.data .number input {
+        width: 570px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 510px;
+    }
+
+    div.accordion .accordion-content div.response {
+        grid-column: 1/3;
+    }
+
+    /*========== Header ==========*/
+    #header .account p {
+        max-width: 392px;
+    }
+
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #content {
+        width: 980px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 940px;
+    }
+
+    table.data-list td p {
+        max-width: 300px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 180px 750px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 730px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 750px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 670px;
+    }
+
+    div.data .number input {
+        width: 650px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 590px;
+    }
+
+    div.accordion .accordion-content div.response {
+        grid-column: 1/3;
+    }
+
+    /*========== Header ==========*/
+    #header .account p {
+        max-width: 472px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #content {
+        width: 1024px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 984px;
+    }
+
+    table.data-list td p {
+        max-width: 350px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 180px 794px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 774px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 794px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 714px;
+    }
+
+    div.data .number input {
+        width: 694px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 634px;
+    }
+
+    div.accordion .accordion-content div.response {
+        grid-column: 1/3;
+    }
+
+    /*========== Header ==========*/
+    #header .account p {
+        max-width: 516px;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1359px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #content {
+        width: 1250px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 1210px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 180px 710px 300px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 690px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 710px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 630px;
+    }
+
+    div.data .number input {
+        width: 610px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 550px;
+    }
+
+    /*========== Header ==========*/
+    #header .account div.name {
+        max-width: 772px;
+    }
+
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1599px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #content {
+        width: 1500px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 1460px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 180px 960px 300px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 940px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 960px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 880px;
+    }
+
+    div.data .number input {
+        width: 860px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 800px;
+    }
+
+    /*========== Header ==========*/
+    #header .account div.name {
+        max-width: 1092px;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    #content {
+        width: 1800px;
+    }
+
+    div.wrapper .content table.data-list {
+        width: 1760px;
+    }
+
+    div.wrapper .header div.pagination,
+    div.wrapper .content div.pagination {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    div.wrapper form .accordion div.data-entry {
+        grid-template-columns: 180px 1260px 300px;
+    }
+
+    div.accordion-content .data input,
+    div.accordion-content .data textarea {
+        width: 1240px;
+    }
+
+    div.accordion-content .data div.ui-select-container {
+        width: 1260px;
+    }
+
+    div.data .country-code div.ui-select-container {
+        width: 70px;
+    }
+
+    div.accordion-content .data div.number {
+        width: 1180px;
+    }
+
+    div.data .number input {
+        width: 1160px;
+    }
+
+    div.accordion-content .data div.file-list,
+    div.accordion-content .data div.thumbnail-list {
+        max-width: 1100px;
+    }
+
+    /*========== Header ==========*/
+    #header .account div.name {
+        max-width: 1411px;
+    }
+
+}

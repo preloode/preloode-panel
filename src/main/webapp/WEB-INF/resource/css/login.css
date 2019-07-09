@@ -1,0 +1,309 @@
+/*==================== Content ====================*/
+#wrapper div.login {
+    margin: 0 0 0 80px;
+    width: 400px;
+}
+
+#wrapper .login div.back {
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    opacity: 1;
+    transform: translateX(0%);
+    transition: 0.5s linear all;
+}
+
+#wrapper .login div.back.ng-hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+#wrapper .login div.picture {
+    background: rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    height: 100px;
+    margin: -30px auto 10px auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+div.login div.picture img {
+    border-radius: 50%;
+}
+
+div.login div.name {
+    font-size: 15px;
+    font-weight: 600;
+    height: 30px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+div.login form div.animation-input {
+    height: 42px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    width: 400px;
+}
+
+form .animation-input input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+    opacity: 1;
+    padding: 5px 10px;
+    position: absolute;
+    transition: 0.2s linear all;
+    width: 380px;
+}
+
+form .animation-input input:focus {
+    border-bottom: 2px solid #41a6ff;
+}
+
+form .animation-input input.username,
+form .animation-input input.password {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+form .animation-input input.username.ng-hide {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+form .animation-input input.password.ng-hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+div.login form div.animation-button {
+    height: 40px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    width: 400px;
+}
+
+form .animation-button button {
+    background: #41a6ff;
+    border: 1px solid #41a6ff;
+    border-radius: 5px;
+    display: block;
+    font-size: 15px;
+    height: 40px;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    transition: 0.2s linear all;
+    width: 400px;
+}
+
+form .animation-button button:hover {
+    background: #3f97fe;
+}
+
+form .animation-button button.next,
+form .animation-button button.login {
+    opacity: 1;
+}
+
+form .animation-button button.next.ng-hide,
+form .animation-button button.login.ng-hide {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 359px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 auto;
+        width: 260px;
+    }
+
+    div.login form div.animation-input,
+    div.login form div.animation-button {
+        width: 260px;
+    }
+
+    form .animation-input input {
+        width: 240px;
+    }
+
+    form .animation-button button {
+        width: 260px;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 auto;
+        width: 280px;
+    }
+
+    div.login form div.animation-input,
+    div.login form div.animation-button {
+        width: 280px;
+    }
+
+    form .animation-input input {
+        width: 260px;
+    }
+
+    form .animation-button button {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 auto;
+        width: 280px;
+    }
+
+    div.login form div.animation-input,
+    div.login form div.animation-button {
+        width: 280px;
+    }
+
+    form .animation-input input {
+        width: 260px;
+    }
+
+    form .animation-button button {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 639px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 auto;
+        width: 280px;
+    }
+
+    div.login form div.animation-input,
+    div.login form div.animation-button {
+        width: 280px;
+    }
+
+    form .animation-input input {
+        width: 260px;
+    }
+
+    form .animation-button button {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 auto;
+        width: 280px;
+    }
+
+    div.login form div.animation-input,
+    div.login form div.animation-button {
+        width: 280px;
+    }
+
+    form .animation-input input {
+        width: 260px;
+    }
+
+    form .animation-button button {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 0 0 50px;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 0 0 50px;
+    }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 979px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 0 0 50px;
+    }
+
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 0 0 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 0 0 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1359px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1599px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 0 0 100px;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2200px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.login {
+        margin: 0 0 0 100px;
+    }
+
+}

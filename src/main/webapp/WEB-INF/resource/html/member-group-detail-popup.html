@@ -1,0 +1,44 @@
+<div class="accordion" ng-init="initializeLayout()">
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="1">Detail<span><i class="plus-white square-10"></i></span>
+    </p>
+    <div class="accordion-content" data-index="1">
+        <p class="title">ID</p>
+        <p class="data">{{id.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Name</p>
+        <p class="data">{{name.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Sequence</p>
+        <p class="data">{{sequence.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Status</p>
+        <p class="data">{{status.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Created Date</p>
+        <p class="data">{{createdDate.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Modified Date</p>
+        <p class="data">{{modifiedDate.value}}</p>
+        <div class="clearfix"></div>
+    </div>
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="2">Bank Account<span><i
+            class="plus-white square-10"></i></span></p>
+    <div class="accordion-content" data-index="2">
+        <div class="bank-account" ng-if="!listPaymentBankAccount.view"><p>You haven't added bank account yet</p></div>
+        <table class="bank-account" ng-if="listPaymentBankAccount.view">
+            <tr>
+                <th><p>#</p></th>
+                <th><p>Bank Name</p></th>
+                <th><p>Bank Account Number</p></th>
+                <th><p>Bank Account Name</p></th>
+                <th><p>Action</p></th>
+            </tr>
+            <tr ng-repeat="listPaymentBankAccountValue in listPaymentBankAccount.value.account.id">
+                <td><p>{{$index + 1}}</p></td>
+                <td><p>{{listPaymentBankAccount.value.name[$index]}}</p></td>
+                <td><p>{{listPaymentBankAccount.value.account.number[$index]}}</p></td>
+                <td><p>{{listPaymentBankAccount.value.account.name[$index]}}</p></td>
+            </tr>
+        </table>
+    </div>
+</div>

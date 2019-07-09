@@ -1,0 +1,163 @@
+/*==================== Content ====================*/
+#wrapper div.installation {
+    margin: 0 auto;
+    width: 500px;
+}
+
+div.installation form p.note {
+    font-weight: 600;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+div.installation form button.install {
+    background: #41a6ff;
+    border: 1px solid #41a6ff;
+    border-radius: 5px;
+    display: block;
+    font-size: 15px;
+    height: 40px;
+    margin: 0 auto;
+    opacity: 1;
+    width: 400px;
+}
+
+div.installation form button.install:hover {
+    background: #3f97fe;
+}
+
+div.installation form button.initialize-demo-data,
+div.installation form button.go-to-panel {
+    background: #41a6ff;
+    border: 1px solid #41a6ff;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    font-size: 15px;
+    height: 40px;
+    margin: 0 20px 0 0;
+    opacity: 1;
+    width: 240px;
+}
+
+div.installation form button.initialize-demo-data:hover,
+div.installation form button.go-to-panel:hover {
+    background: #3f97fe;
+}
+
+div.installation form button.go-to-panel {
+    margin: 0;
+}
+
+@media only screen and (max-width: 359px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.installation {
+        width: 260px;
+    }
+
+    div.installation form button.install {
+        width: 260px;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.installation {
+        width: 280px;
+    }
+
+    div.installation form button.install {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.installation {
+        width: 280px;
+    }
+
+    div.installation form button.install {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 639px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.installation {
+        width: 280px;
+    }
+
+    div.installation form button.install {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+    /*==================== Content ====================*/
+    #wrapper div.installation {
+        width: 280px;
+    }
+
+    div.installation form button.install {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 979px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
+
+    /* Not set yet */
+
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2200px) {
+
+    /* Not set yet */
+
+}

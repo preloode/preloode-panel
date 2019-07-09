@@ -1,0 +1,103 @@
+<div class="accordion" ng-init="initializeLayout()">
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="1">Detail<span><i class="plus-white square-10"></i></span>
+    </p>
+    <div class="accordion-content" data-index="1">
+        <p class="title">Title</p>
+        <p class="data">{{title.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title file">Thumbnail</p>
+        <div class="thumbnail-list" ng-if="thumbnail.upload.result">
+            <img class="responsive" ng-src="{{thumbnail.value}}">
+        </div>
+        <div class="clearfix"></div>
+        <p class="title">Description</p>
+        <div class="data" ng-bind-html="description.value"></div>
+        <div class="clearfix"></div>
+        <p class="title">Content</p>
+        <div class="data" ng-bind-html="content.value"></div>
+        <div class="clearfix"></div>
+        <p class="title">URL</p>
+        <p class="data">{{url.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Meta Title</p>
+        <p class="data">{{metaTitle.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Meta Description</p>
+        <p class="data">{{metaDescription.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Meta Keyword</p>
+        <p class="data">{{metaKeyword.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">OG Title</p>
+        <p class="data">{{ogTitle.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">OG Description</p>
+        <p class="data">{{ogDescription.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Like Amount</p>
+        <p class="data">{{likeAmount.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Like Contributor Amount</p>
+        <p class="data">{{likeContributorAmount.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Dislike Amount</p>
+        <p class="data">{{dislikeAmount.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Dislike Contributor Amount</p>
+        <p class="data">{{dislikeContributorAmount.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Rate Amount</p>
+        <p class="data">{{rateAmount.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Rate Contributor Amount</p>
+        <p class="data">{{rateContributorAmount.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Sequence</p>
+        <p class="data">{{sequence.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Status</p>
+        <p class="data">{{status.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Created Date</p>
+        <p class="data">{{createdDate.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Modified Date</p>
+        <p class="data">{{modifiedDate.value}}</p>
+        <div class="clearfix"></div>
+    </div>
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="2">File<span><i
+            class="plus-white square-10"></i></span></p>
+    <div class="accordion-content" data-index="2">
+        <p class="title">Source</p>
+        <p class="data">{{fileSource.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title file">File</p>
+        <div class="file-list" ng-if="fileName.upload.result">
+            <img class="responsive" ng-src="{{fileName.value}}">
+        </div>
+        <div class="clearfix"></div>
+        <p class="title">URL</p>
+        <p class="data">{{fileUrl.value}}</p>
+        <div class="clearfix"></div>
+    </div>
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="3">Category<span><i
+            class="plus-white square-10"></i></span></p>
+    <div class="accordion-content" data-index="3">
+        <div class="category" ng-repeat="category in category.option">
+            <p ng-bind-html="category.icon"></p>
+            <md-checkbox ng-checked="category.value.id.indexOf(categoryItem.id) > -1">{{categoryItem.name}}
+            </md-checkbox>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="4">Star<span><i
+            class="plus-white square-10"></i></span></p>
+    <div class="accordion-content" data-index="4">
+        <div class="category" ng-repeat="star in star.option">
+            <p ng-bind-html="star.icon"></p>
+            <md-checkbox ng-checked="star.value.id.indexOf(starItem.id) > -1">{{starItem.name}}</md-checkbox>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="popup-separator"></div>
+</div>

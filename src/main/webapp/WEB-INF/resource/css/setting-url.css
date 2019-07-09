@@ -1,0 +1,507 @@
+/*==================== Basic ====================*/
+
+/*==================== Content ====================*/
+div.filter form input.id {
+    margin: 0 10px 10px 0;
+}
+
+div.filter form input:nth-child(2) {
+    margin: 0 10px 10px 0;
+    width: 197px;
+}
+
+div.filter form input:nth-child(3) {
+    margin: 0 10px 10px 0;
+    width: 197px;
+}
+
+div.filter form md-input-container:nth-child(4) {
+    margin: 0 10px 10px 0;
+    width: 217px;
+}
+
+div.filter form input:nth-child(5) {
+    margin: 0 10px 10px 0;
+    width: 198px;
+}
+
+@media only screen and (max-width: 359px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        margin: 0 0 10px 0;
+        width: 170px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 115px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        margin: 0 0 10px 0;
+        width: 135px;
+    }
+
+    div.filter form input:nth-child(5) {
+        margin: 0 0 10px 0;
+        width: 260px;
+    }
+
+    div.filter form button.filter {
+        margin: 0 10px 0 10px;
+    }
+
+    div.content .data-list th:nth-child(3),
+    div.content .data-list td:nth-child(3),
+    div.content .data-list th:nth-child(4),
+    div.content .data-list td:nth-child(4),
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(6),
+    div.content .data-list td:nth-child(6),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        margin: 0 0 10px 0;
+        width: 210px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 135px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        margin: 0 0 10px 0;
+        width: 155px;
+    }
+
+    div.filter form input:nth-child(5) {
+        margin: 0 0 10px 0;
+        width: 300px;
+    }
+
+    div.filter form button.filter {
+        margin: 0 10px 0 30px;
+    }
+
+    div.content .data-list th:nth-child(3),
+    div.content .data-list td:nth-child(3),
+    div.content .data-list th:nth-child(4),
+    div.content .data-list td:nth-child(4),
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(6),
+    div.content .data-list td:nth-child(6),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        width: 150px;
+    }
+
+    div.filter form input:nth-child(3) {
+        margin: 0 0 10px 0;
+        width: 150px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        width: 215px;
+    }
+
+    div.filter form input:nth-child(5) {
+        margin: 0 0 10px 0;
+        width: 195px;
+    }
+
+    div.filter form button.filter {
+        margin: 0 10px 0 90px;
+    }
+
+    div.content .data-list th:nth-child(3),
+    div.content .data-list td:nth-child(3),
+    div.content .data-list th:nth-child(4),
+    div.content .data-list td:nth-child(4),
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(6),
+    div.content .data-list td:nth-child(6),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 639px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        width: 210px;
+    }
+
+    div.filter form input:nth-child(3) {
+        margin: 0 0 10px 0;
+        width: 210px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        width: 275px;
+    }
+
+    div.filter form input:nth-child(5) {
+        margin: 0 0 10px 0;
+        width: 255px;
+    }
+
+    div.filter form button.filter {
+        margin: 0 10px 0 150px;
+    }
+
+    div.content .data-list th:nth-child(4),
+    div.content .data-list td:nth-child(4),
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(6),
+    div.content .data-list td:nth-child(6),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        width: 230px;
+    }
+
+    div.filter form input:nth-child(3) {
+        margin: 0 0 10px 0;
+        width: 230px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        width: 295px;
+    }
+
+    div.filter form input:nth-child(5) {
+        margin: 0 0 10px 0;
+        width: 275px;
+    }
+
+    div.filter form button.filter {
+        margin: 0 10px 0 170px;
+    }
+
+    div.content .data-list th:nth-child(4),
+    div.content .data-list td:nth-child(4),
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(6),
+    div.content .data-list td:nth-child(6),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        width: 186px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 186px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        margin: 0 0 10px 0;
+        width: 206px;
+    }
+
+    div.filter form input:nth-child(5) {
+        width: 438px;
+    }
+
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(6),
+    div.content .data-list td:nth-child(6),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        width: 197px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 197px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        margin: 0 0 10px 0;
+        width: 216px;
+    }
+
+    div.filter form input:nth-child(5) {
+        width: 470px;
+    }
+
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(6),
+    div.content .data-list td:nth-child(6),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 979px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        width: 165px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 165px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        width: 185px;
+    }
+
+    div.filter form input:nth-child(5) {
+        margin: 0 0 10px 0;
+        width: 165px;
+    }
+
+    div.filter form button.filter {
+        margin: 0 10px 0 300px;
+    }
+
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        width: 185px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 185px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        width: 205px;
+    }
+
+    div.filter form input:nth-child(5) {
+        margin: 0 0 10px 0;
+        width: 185px;
+    }
+
+    div.filter form button.filter {
+        margin: 0 10px 0 340px;
+    }
+
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        width: 196px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 196px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        width: 216px;
+    }
+
+    div.filter form input:nth-child(5) {
+        margin: 0 0 10px 0;
+        width: 196px;
+    }
+
+    div.filter form button.filter {
+        margin: 0 10px 0 362px;
+    }
+
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(7),
+    div.content .data-list td:nth-child(7),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1359px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input:nth-child(2) {
+        width: 185px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 185px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        width: 205px;
+    }
+
+    div.filter form input:nth-child(5) {
+        width: 185px;
+    }
+
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5),
+    div.content .data-list th:nth-child(8),
+    div.content .data-list td:nth-child(8) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1599px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.content .data-list th:nth-child(5),
+    div.content .data-list td:nth-child(5) {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input.id {
+        width: 100px;
+    }
+
+    div.filter form input:nth-child(2) {
+        width: 238px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 237px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        width: 257px;
+    }
+
+    div.filter form input:nth-child(5) {
+        width: 238px;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+    /*==================== Basic ====================*/
+    /*==================== Content ====================*/
+    div.filter form input.id {
+        width: 100px;
+    }
+
+    div.filter form input:nth-child(2) {
+        width: 313px;
+    }
+
+    div.filter form input:nth-child(3) {
+        width: 312px;
+    }
+
+    div.filter form md-input-container:nth-child(4) {
+        width: 332px;
+    }
+
+    div.filter form input:nth-child(5) {
+        width: 313px;
+    }
+
+}

@@ -1,0 +1,72 @@
+<div class="accordion" ng-init="initializeLayout()">
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="1">Detail<span><i class="plus-white square-10"></i></span>
+    </p>
+    <div class="accordion-content" data-index="1">
+        <p class="title">Name</p>
+        <p class="data">{{name.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title file">Thumbnail</p>
+        <div class="thumbnail-list" ng-if="thumbnail.upload.result">
+            <img class="responsive" ng-src="{{thumbnail.value}}">
+        </div>
+        <div class="clearfix"></div>
+        <p class="title">Description</p>
+        <div class="data" ng-bind-html="description.value"></div>
+        <div class="clearfix"></div>
+        <p class="title">Content</p>
+        <div class="data" ng-bind-html="content.value"></div>
+        <div class="clearfix"></div>
+        <p class="title">URL</p>
+        <p class="data">{{url.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Meta Title</p>
+        <p class="data">{{metaTitle.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Meta Description</p>
+        <p class="data">{{metaDescription.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Meta Keyword</p>
+        <p class="data">{{metaKeyword.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">OG Title</p>
+        <p class="data">{{ogTitle.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">OG Description</p>
+        <p class="data">{{ogDescription.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Rate Amount</p>
+        <p class="data">{{rateAmount.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Rate Contributor</p>
+        <p class="data">{{rateContributor.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Rate Result</p>
+        <p class="data">{{rateResult.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Sequence</p>
+        <p class="data">{{sequence.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Status</p>
+        <p class="data">{{status.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Created Date</p>
+        <p class="data">{{createdDate.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title">Modified Date</p>
+        <p class="data">{{modifiedDate.value}}</p>
+        <div class="clearfix"></div>
+    </div>
+    <p class="accordion-navigation" ng-click="rebuild()" data-index="2">File<span><i
+            class="plus-white square-10"></i></span></p>
+    <div class="accordion-content" data-index="2">
+        <p class="title">Source</p>
+        <p class="data">{{fileSource.value}}</p>
+        <div class="clearfix"></div>
+        <p class="title file">File</p>
+        <div class="file-list" ng-if="fileName.upload.result">
+            <img class="responsive" ng-src="{{fileName.value}}">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="popup-separator"></div>
+</div>
